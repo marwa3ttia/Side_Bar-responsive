@@ -3,405 +3,64 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/base.css">
+    <title>Bootstrap 5 Side Bar Navigation</title>
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- start header -->
-    <header class="header__section">
-        <div class="container">
-            <nav class="header__section-nav">
-                <div class="logo">
-                    <figure> <img src="img/logo.png" alt=""></figure>
-                </div>
-                <ul class="header__section-links">
-                    <li>home</li>
-                    <li>feather</li>
-                    <li>vedio</li>
-                    <li>pricing</li>
-                    <li>screen</li>
-                    <li>pages</li>
-                    <li>blog</li>
-                    <li>contact</li>
-                </ul>
-            </nav>
-            <div class="header__section-wraper">
-                <div class="header__section-info">
-                    <h1> the best app in the universe</h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, architecto voluptatibus
-                        pariatur modi molestiae officia reprehenderit esse</p>
-                    <button> explore now </button>
-                </div>
-                <figure class="header__section-photo"> <img src="img/right-mobile.png"></figure>
-            </div>
-        </div>
-    </header>
-    <!-- end header -->
-    <!-- ********************************************* -->
-    <!-- start features -->
-    <div class="features">
-
-        <div class="container">
-            <section>
-                <h2>unique features </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reiciendis nemo voluptatibus
-                    reiciendis nemo voluptatibus </p>
-            </section>
-
-            <div class="features__info">
-                <div class="features__info-item">
-
-                    <figure> <img src="img/f-icon-1.png" alt=""></figure>
-                    <h3> features</h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, itaque excepturi obcaecati
-                        rem iure animi fugiat commodi reiciendis nemo voluptatibus </p>
-                </div>
-                <div class="features__info-item">
-                    <figure> <img src="img/f-icon-1.png" alt=""></figure>
-                    <h3> features</h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, itaque excepturi obcaecati
-                        rem iure animi fugiat commodi reiciendis nemo voluptatibus</p>
-                </div>
-                <div class="features__info-item">
-                    <figure> <img src="img/f-icon-1.png" alt=""></figure>
-                    <h3> features</h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, itaque excepturi obcaecati
-                        rem iure animi fugiat commodi reiciendis nemo voluptatibus </p>
-                </div>
-                <div class="features__info-item">
-                    <figure> <img src="img/f-icon-1.png" alt=""></figure>
-                    <h3> features</h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, itaque excepturi obcaecati
-                        rem iure animi fugiat commodi reiciendis nemo voluptatibus </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end features -->
-    <!-- ************************************************* -->
-    <!-- start product one -->
-    <div class="product__one">
-        <div class="container">
-            <div class="product__one-contain">
-                <figure class="product__one-photo">
-                    <img src="img/interior-1.png" alt="">
-                </figure>
-                <div class="product__one-info">
-                    <h2> we believe that interior beautiful the total architecture </h2>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sapiente fuga, magni consectetur
-                        esse
-                        officiis amet? Veniam ipsa, veritatis quidvoluptatem facilis totam aliquid placeat facere
-                        eligendi. Ducimus, minus quisquamem voluptatem facilis totam aliquid placeat facere
-                        eligendi. Ducimus, minus quisquam</p>
-                    <button> see details </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end product one -->
-
-
-    <!-- start product two -->
-
-    <div class="container">
-        <div class="product__two">
-            <div class="product__two-info">
-                <h2> we believe that interior beautiful the total architecture </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sapiente fuga, magni consectetur esse
-                    officiis amet? Veniam ipsa, veritatis quidvoluptatem facilis totam aliquid placeat facere
-                    eligendi. Ducimus, minus quisquamem voluptatem facilis totam aliquid placeat facere
-                    eligendi. Ducimus, minus quisquam</p>
-                <button> see details </button>
-            </div>
-            <figure class="product__two-photo">
-                <img src="img/interior-2.png" alt="">
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start p-3" id="sidebar">
+        <a href="#" class="navbar-brand text-light my-4">
+            <div class="display-6">Taskeasy</div>
+            <hr>
+        </a>
+       
+        <ul class="navbar-nav d-flex flex-column  w-100">
+            <li class="nav-item"> <a href="#" class="nav-link active" aria-current="page"> <i class="fa fa-home"></i><span class="ms-2">Home</span> </a> </li>
+                
+            <li> <a href="#" class="nav-link text-white"> <i class="fa far fa-thumbtack"></i><span class="ms-2"> My Projects</span> </a> </li>
+            <li> <a href="#" class="nav-link text-white"> <i class="fas fa-tasks"></i><span class="ms-2"> My tasks </span> </a> </li>
+        </ul>
+    </nav>
+    <section class="p-2 my-container">
+        <div class= "navbar__section ps-2  pe-4 d-flex py-2">
+            <button class="btn me-3" id="menu-btn"><i class="fas fa-sliders-h fs-5"></i></button>
+            <figure class="m-0">
+                <img src="imgs/logo.png" class="w-100" alt="">
             </figure>
+            <ul class="d-flex align-items-baseline mb-0">
+                
+                <li class= "px-3 text-capitalize"><i class="far fa-comments-alt "></i></li>
+                <li class= "px-3 text-capitalize"><i class="far fa-bell"></i></li>
+                
+                <li class= "px-3 text-capitalize">  
+                    <div class="dropdown"> <a href="#" class=" text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"> <img src="imgs/person.ico" alt="" width="32" height="32" class="rounded-circle me-2"> <strong> user name </strong> </a>
+                        <ul class="mt-3 dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                       
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </div>
-    <!-- end product two -->
+       
+        <h1>Bootstrap 5 Sidebar Navigation</h1>
+       
+    </section>
+    
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="test.js"></script>
 
-    <!-- start vedio -->
-    <div class="vedio__section">
-        <div class="container">
-
-            <figure>
-                <img src="img/video-1.png" alt="">
-            </figure>
-            <div class="vedio__section-icon">
-                <i class="fal fa-play-circle"></i>
-            </div>
-        </div>
-
-    </div>
-    <!-- end  vedio -->
-    <!-- start pricing table -->
-    <div class="pricing__table">
-        <div class="container">
-            <div class="pricing__table-header">
-                <h1> pricing table </h1>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati iusto recusandae vero eius ipsa
-                    voluptate illo suscipit </p>
-            </div>
-
-
-            <div class="pricing__table-items">
-                <div class="pricing__table-item">
-
-                    <div class="header__table">
-
-                        <div class="text">
-                            <span class="text__item"> standard</span>
-                            <p> for the individuals </p>
-                        </div>
-                        <span class="count"> $109</span>
-                    </div>
-                    <ul>
-                        <li> amet consectetur </li>
-                        <li> the consectetur </li>
-                        <li> consectetur </li>
-                        <li>am consectetur </li>
-                        <li>amet10 consectetur </li>
-                    </ul>
-                    <button> purshase plan</button>
-                </div>
-
-                <div class="pricing__table-item">
-
-                    <div class="header__table">
-
-                        <div class="text">
-                            <span class="text__item"> standard</span>
-                            <p> for the individuals </p>
-                        </div>
-                        <span class="count"> $109</span>
-                    </div>
-                    <ul>
-                        <li> amet consectetur </li>
-                        <li> the consectetur </li>
-                        <li> consectetur </li>
-                        <li>am consectetur </li>
-                        <li>amet10 consectetur </li>
-                    </ul>
-                    <button> purshase plan</button>
-                </div>
-
-
-                <div class="pricing__table-item">
-
-                    <div class="header__table">
-
-                        <div class="text">
-                            <span class="text__item"> standard</span>
-                            <p> for the individuals </p>
-                        </div>
-                        <span class="count"> $109</span>
-                    </div>
-                    <ul>
-                        <li> amet consectetur </li>
-                        <li> the consectetur </li>
-                        <li> consectetur </li>
-                        <li>am consectetur </li>
-                        <li>amet10 consectetur </li>
-                    </ul>
-                    <button> purshase plan</button>
-                </div>
-
-
-
-            </div>
-
-        </div>
-    </div>
-    <!-- end  pricing table -->
-
-    <!-- start  screenshots -->
-    <div class="screenshots">
-        <div class="container">
-            <div class="screenshots__header">
-                <h1> unique screenshots </h1>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati iusto recusandae vero eius ipsa
-                    voluptate illo suscipit </p>
-            </div>
-            <div class="screenshots__photos">
-                <figure> <img src="img/feature-1.jpg" alt=""></figure>
-                <figure> <img src="img/feature-2.jpg" alt=""></figure>
-                <figure> <img src="img/feature-3.jpg" alt=""></figure>
-                <figure> <img src="img/feature-4.jpg" alt=""></figure>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- end  screenshots -->
-    <!-- ************************************ -->
-    <!-- start testmonials -->
-    <div class="testmonials">
-        <div class="container">
-            <div class="testmonials__header">
-                <h1> unique screenshots </h1>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati iusto recusandae vero eius ipsa
-                    voluptate illo suscipit </p>
-            </div>
-            <div class="testmonials__items">
-                <div class="testmonials__item">
-                    <figure>
-                        <img src="img/testi-1.png" alt="">
-                    </figure>
-                    <div class="testmonials__item-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis atque illo aliquid
-                            laboriosam sequi tempora sint nam, ipsum consectetur.</p>
-                        <h3> marwa attia</h3>
-                        <p> welcome in my website</p>
-                    </div>
-                </div>
-                <div class="testmonials__item">
-                    <figure>
-                        <img src="img/testi-2.png" alt="">
-                    </figure>
-                    <div class="testmonials__item-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis atque illo aliquid
-                            laboriosam sequi tempora sint nam, ipsum consectetur.</p>
-                        <h3> welcome marwa attia</h3>
-                        <p> my website</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- end testmonials -->
-    <!-- start download -->
-    <div class="download__container">
-
-        <div class="download">
-
-            <h3> download this app today!</h3>
-            <p class="download__p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non recusandae voluptatem
-                sint eum omnis possimus quo quis ipsa eius, fuga quos natus. Magni aspernatur distinctio animi</p>
-
-            <div class=" download__icon">
-                <a href="#">
-                    <i class="fab fa-apple"></i>
-                    <div class="download__icon-text">
-                        <span> Available</span>
-                        <p> on the store </p>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <i class="fab fa-android"></i>
-                    <div class="download__icon-text">
-                        <span> Available</span>
-                        <p> on the store </p>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-    </div>
-    <!-- end download -->
-
-    <!-- start news -->
-
-
-    <div class="latest__news">
-        <div class="container">
-            <div class="latest__news-header">
-                <h1>latest news </h1>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati iusto recusandae vero eius ipsa
-                    voluptate illo suscipit psa voluptate illo suscipit</p>
-            </div>
-
-
-            <div class="latest__news-items">
-                <div class="latest__news-item">
-                    <button> 10 oct, 2021</button>
-                    <h3> amet consectetur adipisicing elit marwa </h3>
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus id, cum numquam ipsam
-                        sapiente assumenda aut, distinctio a similique, dolores adipisci dicta </p>
-                    <p> <i class="fal fa-eye"></i> 4.5k views <i class="icon fal fa-comment-dots"></i> 07 <i
-                            class="fas fa-reply icon"></i> 360 </p>
-                </div>
-
-                <div class="latest__news-item">
-                    <button> 10 oct, 2021</button>
-                    <h3> amet consectetur adipisicing elit marwa </h3>
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus id, cum numquam ipsam
-                        sapiente assumenda aut, distinctio a similique, dolores adipisci dicta </p>
-                    <p> <i class="fal fa-eye"></i> 4.5k views <i class="icon fal fa-comment-dots"></i> 07 <i
-                            class="fas fa-reply icon"></i> 360 </p>
-                </div>
-
-
-                <div class="latest__news-item">
-                    <button> 10 oct, 2021</button>
-                    <h3> amet consectetur adipisicing elit marwa </h3>
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus id, cum numquam ipsam
-                        sapiente assumenda aut, distinctio a similique, dolores adipisci dicta </p>
-                    <p> <i class="fal fa-eye"></i> 4.5k views <i class="icon fal fa-comment-dots"></i> 07 <i
-                            class="fas fa-reply icon"></i> 360 </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- end news -->
-    <!-- start footer -->
-    <footer>
-        <div class="container">
-            <div class="footer__contain">
-                <div class="product">
-                    <h4> top product </h4>
-                    <ul>
-                        <li>managed website </li>
-                        <li> managed reputation </li>
-                        <li> power tools</li>
-                        <li> marketing service </li>
-                    </ul>
-                </div>
-                <div class="sletter">
-                    <h4> newsletter </h4>
-                    <p> managed reputation managed reputation marwa </p>
-                    <input type="email" name="" id="" placeholder=" your email address">
-                    <button> get started </button>
-                </div>
-                <div class="insta">
-                    <h4> instagram feed </h4>
-                    <div class=" group__one">
-                        <figure> <img src="img/Image-01.jpg" alt=""></figure>
-                        <figure> <img src="img/Image-02.jpg" alt=""></figure>
-                        <figure> <img src="img/Image-03.jpg" alt=""></figure>
-                        <figure> <img src="img/Image-04.jpg" alt=""></figure>
-                    </div>
-                    <div class=" group__two">
-                        <figure> <img src="img/Image-05.jpg" alt=""></figure>
-                        <figure> <img src="img/Image-06.jpg" alt=""></figure>
-                        <figure> <img src="img/Image-07.jpg" alt=""></figure>
-                        <figure> <img src="img/Image-08.jpg" alt=""></figure>
-                    </div>
-
-                </div>
-               
-            </div>
-            <div class="footer__nav">
-                <p> copyright &copy; 2021 all right reserved this tamplate made with ♥ by <span> marwa attia </span>  </p>
-                <ul> 
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-linkedin-in"></i></li>
-                    <li><i class="fab fa-github"></i></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-    <!-- end footer -->
 </body>
-
 
 </html>
